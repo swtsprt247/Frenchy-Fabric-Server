@@ -28,7 +28,7 @@ CLIENT_ID = json.loads(
     open('client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Frenchy Fabric Application"
 
-engine = create_engine('postgresql://catalog:password@localhost/catalog',
+engine = create_engine('postgresql://catalog:catalog@localhost/catalog',
                        connect_args={'check_same_thread': False})
 Base.metadata.bind = engine
 
@@ -471,6 +471,6 @@ def MerchandiseJSON():
 
 
 if __name__ == '__main__':
-    app.secret_key = 'super_secret_key'
+    app.secret_key = 'secret'
     app.debug = True
     app.run(host='0.0.0.0', port=8000)
