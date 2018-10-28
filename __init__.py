@@ -25,7 +25,7 @@ app = Flask(__name__)
 
 # Referencing Client Secret File
 CLIENT_ID = json.loads(
-    open('client_secrets.json', 'r').read())['web']['client_id']
+    open('/var/www/catalog/catalog/client_secrets.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Frenchy Fabric Application"
 
 engine = create_engine('postgresql://catalog:password@localhost/catalog',
