@@ -57,7 +57,7 @@ class Categories(Base):
     description = Column(String(250))
     merchandise_id = Column(Integer, ForeignKey('merchandise.id'))
     user_id = Column(Integer, ForeignKey('user.id'))
-    merchandise = relationship("Merchandise", backref="name", cascade="all, delete-orphan", single_parent=True)
+    merchandise = relationship("Merchandise", backref="merchandise_name", cascade="all, delete-orphan", single_parent=True)
     user = relationship(User)
 
 # We added this serialize function to be able to send JSON objects in a
