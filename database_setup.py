@@ -54,7 +54,7 @@ class Categories(Base):
 
     name = Column(String(80), nullable=False)
     id = Column(Integer, primary_key=True)
-    description = Column(String(300))
+    description = Column(String(250))
     merchandise_id = Column(Integer, ForeignKey('merchandise.id'))
     user_id = Column(Integer, ForeignKey('user.id'))
     merchandise = relationship("Merchandise", backref="merchandise_name", cascade="all, delete-orphan", single_parent=True)

@@ -68,7 +68,7 @@ session.add(categories9)
 session.commit()
 
 
-categories10 = Categories(name="Flannel", description="A soft woven fabric, of various fineness. Flannel was originally made from carded wool or worsted yarn, but is now often made from either wool, cotton, or synthetic fiber. Vegetable flannel is made from Scots pine fibre. Flannel may be brushed to create extra softness or remain unbrushed.",
+categories10 = Categories(name="Flannel", description="A soft woven fabric, of various fineness. Flannel was originally made from carded wool or worsted yarn, but is now often made from either wool, cotton, or synthetic fiber.",
                           merchandise=fabric1)
 
 session.add(categories10)
@@ -82,7 +82,7 @@ session.add(categories11)
 session.commit()
 
 
-categories12 = Categories(name="Rayon", description="The many types and grades of rayon can imitate the feel and texture of natural fibers such as silk, wool, cotton, and linen. The types that resemble silk are often called artificial silk.  Rayon is made from purified cellulose, primarily from wood pulp, which is chemically converted into a soluble compound. It is then dissolved and forced through a spinneret to produce filaments which are chemically solidified, resulting in fibers of nearly pure cellulose.",
+categories12 = Categories(name="Rayon", description="Rayon is nice.",
                           merchandise=fabric1)
 
 session.add(categories12)
@@ -110,7 +110,7 @@ session.add(categories3)
 session.commit()
 
 
-categories4 = Categories(name="Batting &amp Interfacing", description="Quilt batting is used in various sewing and quilting projects, is also known as wadding. It is used as a layer of insulation between fabrics, most often used in quilt making. Batting is the filling of quilts and makes them warm and heavy.  Interfacing creates stability for fabric.",
+categories4 = Categories(name="Batting &amp Interfacing", description="Quilt batting is used in various sewing and quilting projects, is also known as wadding. It is used as a layer of insulation between fabrics, most often used in quilt making. Batting is the filling of quilts and makes them warm and heavy.",
                          merchandise=fabric2)
 
 session.add(categories4)
