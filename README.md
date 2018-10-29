@@ -13,7 +13,7 @@ IP address: 34.205.74.230
 
 SSH port: 2200.
 
-Application URL: [ec2-34-205-74-230.compute-1.amazonaws.com](ec2-34-205-74-230.compute-1.amazonaws.com).
+Application URL: [http://ec2-34-205-74-230.compute-1.amazonaws.com](http://ec2-34-205-74-230.compute-1.amazonaws.com).
 
 Username and password for Udacity reviewer: `grader`, `oliverw`
 
