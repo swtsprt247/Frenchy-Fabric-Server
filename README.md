@@ -9,11 +9,11 @@ The application deployed here is the **Item Catalog - Frenchy Fabric**, previous
 
 ## Server/App Info
 
-IP address: 34.205.74.230
+IP address: 52.91.94.162
 
 SSH port: 2200.
 
-Application URL: [http://ec2-34-205-74-230.compute-1.amazonaws.com](http://ec2-34-205-74-230.compute-1.amazonaws.com).
+Application URL: [http://ec2-52-91-94-162.compute-1.amazonaws.com](http://ec2-52-91-94-162.compute-1.amazonaws.com).
 
 Username and password for Udacity reviewer: `grader`, `oliverw`
 
@@ -22,7 +22,7 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 
 1. Launching an AWS Lightsail instance
 2. The instance's security group provides a SSH port 22 by default
-3. The public IP is 34.205.74.230
+3. The public IP is 52.91.94.162
 4. Download the private key `LightsailDefaultKeyPair.pem` from AWS
 
 ### 2 - User, SSH and Security Configurations
@@ -153,8 +153,8 @@ Project requirements need the server to only allow incoming connections for SSH 
    Add the following content:
 ```
 <VirtualHost *:80>
-		ServerName 34.205.74.230
-		ServerAdmin admin@34.205.74.230
+		ServerName 52.91.94.162
+		ServerAdmin admin@52.91.94.162
 		WSGIScriptAlias / /var/www/catalog/catalog.wsgi
 		<Directory /var/www/catalog/catalog/>
 			Order allow,deny
@@ -201,7 +201,7 @@ application.secret_key = 'Add your secret key'
 ### 9- Run the application:
 * Create the datbase schema:
     `python database_setup.py`
-    `python lotsofmenus.py`
+    `python fabricfabric.py`
 * Restart Apache : `sudo service apache2 restart`
 If an internal error shows up when you try to access the app, open Apache error log as a reference for debugging:
    ```
