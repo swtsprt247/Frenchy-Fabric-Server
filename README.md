@@ -58,7 +58,15 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 ### 3. Update all currently installed packages
 
 	sudo apt-get update
+	sudo apt-get dist-upgrade
 	sudo apt-get upgrade
+	
+- Configure cron scripts to automatically update packages (Exceeds Specifications)
+
+1. Install *unattended-upgrades*: `$ sudo apt-get install unattended-upgrades`.
+2. Enable it by: `$ sudo dpkg-reconfigure --priority=low unattended-upgrades`.
+
+Source: [Ubuntu Server Guide](https://help.ubuntu.com/12.04/serverguide/automatic-updates.html).
   
   
 ### 3 - Configure the local timezone to UTC
