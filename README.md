@@ -41,7 +41,7 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 	$ su - grader
 	$ mkdir .ssh
 	$ touch .ssh/authorized_keys
-	$ vim .ssh/authorized_keys
+	$ nano .ssh/authorized_keys
 	```
 	Copy the public key generated on your local machine to this file and save
 	```
