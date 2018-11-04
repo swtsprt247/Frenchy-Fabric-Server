@@ -9,11 +9,11 @@ The application deployed here is the **Item Catalog - Frenchy Fabric**, previous
 
 ## Server/App Info
 
-IP address: 52.91.94.162
+IP address: 54.166.212.133
 
 SSH port: 2200.
 
-Application URL: [http://ec2-52-91-94-162.compute-1.amazonaws.com](http://ec2-52-91-94-162.compute-1.amazonaws.com).
+Application URL: [http://ec2-54.166.212.133.compute-1.amazonaws.com](http://ec2-54.166.212.133.compute-1.amazonaws.com).
 
 Username and password for Udacity reviewer: `grader`, `oliverw`
 
@@ -22,12 +22,12 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 
 1. Launching an AWS Lightsail instance
 2. The instance's security group provides a SSH port 22 by default
-3. The public IP is 52.91.94.162
-4. Download the private key `LightsailDefaultKeyPair.pem` from AWS
+3. The public IP is 54.166.212.133
+4. Download the private key `grader_key.pem` from AWS
 
 ### 2 - User, SSH and Security Configurations
 
-1. Log into the remote VM as *root* user (`ubuntu`) through ssh: `$ ssh -i ~/.ssh/LightsailDefaultKeyPair.pem ubuntu@52.91.21.75`.
+1. Log into the remote VM as *root* user (`ubuntu`) through ssh: `$ ssh -i ~/.ssh/grader_key.pem ubuntu@54.166.212.133`.
 2. Create a new user *grader*:  `$ sudo adduser grader`.
 3. Grant udacity the permission to sudo, by adding a new file under the suoders directory: `$ sudo nano /etc/sudoers.d/grader`. In the file put in: `grader ALL=(ALL:ALL) ALL`, then save and quit.
 4. Generate a new key pair by entering the following command at the terminal of your *local machine*.
@@ -161,8 +161,8 @@ Project requirements need the server to only allow incoming connections for SSH 
    Add the following content:
 ```
 <VirtualHost *:80>
-		ServerName 52.91.94.162
-		ServerAdmin admin@52.91.94.162
+		ServerName 54.166.212.133
+		ServerAdmin admin@54.166.212.133
 		WSGIScriptAlias / /var/www/catalog/catalog.wsgi
 		<Directory /var/www/catalog/catalog/>
 			Order allow,deny
