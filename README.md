@@ -50,7 +50,7 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 	```
     5. Change the owner from `ubuntu` to `grader`: `$ sudo chown -R grader:grader /home/grader/.ssh`
   
-3. reload SSH using `service ssh restart`
+3. reload SSH using `sudo service ssh restart`
 4. now you can use ssh to login with the new user you created
 
 	`ssh -i [privateKeyFilename] grader@34.205.74.230`
