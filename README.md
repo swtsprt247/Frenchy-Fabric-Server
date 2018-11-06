@@ -12,7 +12,7 @@ The application deployed here is the **Item Catalog - Frenchy Fabric**, previous
 IP address: 54.162.62.114
 SSH port: 2200.
 
-Application URL: [http://ec2-54.162.62.114.compute-1.amazonaws.com](http://ec2-54.162.62.114.compute-1.amazonaws.com).
+Application URL: [http://ec2-54-162-62-114.compute-1.amazonaws.com](http://ec2-54-162-62-114.compute-1.amazonaws.com).
 
 Username and password for Udacity reviewer: `grader`, `oliverw`
 
