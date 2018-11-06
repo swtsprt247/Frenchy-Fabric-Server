@@ -26,7 +26,7 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 
 ### 2 - User, SSH and Security Configurations
 
-1. Log into the remote VM as *root* user (`ubuntu`) through ssh: `$ ssh -i ~/.ssh/grader_key.pem ubuntu@54.166.212.133`.
+1. Log into the remote VM as *root* user (`ubuntu`) through ssh: `$ ssh grader@54.162.62.114 -p 2200 -i /LightsailDefaultPrivateKey.pem`.
 2. Create a new user *grader*:  `$ sudo adduser grader`.
 3. Grant udacity the permission to sudo, by adding a new file under the suoders directory: `$ sudo nano /etc/sudoers.d/grader`. In the file put in: `grader ALL=(ALL:ALL) ALL`, then save and quit.
 4. Generate a new key pair by entering the following command at the terminal of your *local machine*.
