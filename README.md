@@ -9,11 +9,10 @@ The application deployed here is the **Item Catalog - Frenchy Fabric**, previous
 
 ## Server/App Info
 
-IP address: 54.237.147.20
-
+IP address: 54.162.62.114
 SSH port: 2200.
 
-Application URL: [http://ec2-54.237.147.20.compute-1.amazonaws.com](http://ec2-54.237.147.20.compute-1.amazonaws.com).
+Application URL: [http://ec2-54.162.62.114.compute-1.amazonaws.com](http://ec2-54.162.62.114.compute-1.amazonaws.com).
 
 Username and password for Udacity reviewer: `grader`, `oliverw`
 
@@ -22,7 +21,7 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 
 1. Launching an AWS Lightsail instance
 2. The instance's security group provides a SSH port 22 by default
-3. The public IP is 54.237.147.20
+3. The public IP is 54.162.62.114
 4. Download the private key `grader_key.pem` from AWS
 
 ### 2 - User, SSH and Security Configurations
@@ -161,8 +160,8 @@ Project requirements need the server to only allow incoming connections for SSH 
    Add the following content:
 ```
 <VirtualHost *:80>
-		ServerName 54.237.147.20
-		ServerAdmin admin@54.237.147.20
+		ServerName 54.162.62.114
+		ServerAdmin admin@54.162.62.114
 		WSGIScriptAlias / /var/www/catalog/catalog.wsgi
 		<Directory /var/www/catalog/catalog/>
 			Order allow,deny
