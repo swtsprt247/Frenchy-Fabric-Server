@@ -22,7 +22,7 @@ Username and password for Udacity reviewer: `grader`, `oliverw`
 1. Launching an AWS Lightsail instance
 2. The instance's security group provides a SSH port 22 by default
 3. The public IP is 54.162.62.114
-4. Download the private key `grader_key.pem` from AWS
+4. Download the private key `LightsailDefaultPrivateKey.pem` from AWS
 
 ### 2 - User, SSH and Security Configurations
 
