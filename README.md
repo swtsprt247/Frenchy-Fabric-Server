@@ -14,7 +14,7 @@ SSH port: 2200.
 
 Application URL: [http://ec2-54-162-62-114.compute-1.amazonaws.com](http://ec2-54-162-62-114.compute-1.amazonaws.com).
 
-Username and password for Udacity reviewer: `grader`, `oliverw`
+Username and password for Udacity reviewer: `grader`,
 
 
 ### 1 - Launching an AWS Lightsail Instance and connect to it via SSH
